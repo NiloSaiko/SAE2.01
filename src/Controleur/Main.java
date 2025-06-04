@@ -18,6 +18,10 @@ public class Main extends Application{
 		Application.launch();
 	}
 	
+	static public void fermerAppli() {
+		System.exit(0);
+	}
+	
 
 	
 	
