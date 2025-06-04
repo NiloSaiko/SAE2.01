@@ -12,7 +12,7 @@ public class FenGestion extends Stage  {
 	public FenGestion() throws IOException {
 		Scene laScene;
 		laScene = new Scene(creerSceneGraph());
-		this.setTitle("Facture");
+		this.setTitle("Gestion");
 		this.setScene(laScene);
 		this.sizeToScene();
 		this.setResizable(false);
@@ -26,4 +26,6 @@ public class FenGestion extends Stage  {
 		return racine;
 
 	}
+
+
 }
