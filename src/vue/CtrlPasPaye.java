@@ -1,5 +1,6 @@
 package vue;
 
+import Controleur.Main;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
@@ -25,4 +26,7 @@ public class CtrlPasPaye {
     @FXML private TableColumn<?, ?> nomColumn;
     @FXML private TableColumn<?, ?> idColumn;
 
+    @FXML void clicQuitter() {
+    	Main.closePasPaye();
+    }
 }

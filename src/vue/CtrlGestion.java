@@ -20,5 +20,17 @@ public class CtrlGestion {
     @FXML void clicFacture() {
     	Main.openFacture();
     }
+    
+    @FXML void clicRappel() {
+    	Main.openRappel();
+    }
+    
+    @FXML void clicInscription() {
+    	Main.openInscription();
+    }
+    
+    @FXML void clicPasPaye() {
+    	Main.openPasPaye();
+    }
 
 }

@@ -1,5 +1,6 @@
 package vue;
 
+import Controleur.Main;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.RadioButton;
@@ -17,5 +18,9 @@ public class CtrlFacture {
     @FXML private Button bnGenerer;
     @FXML private RadioButton bnCarte;
     @FXML private ToggleGroup typeFactureGroup;
+    
+    @FXML void clicAnnuler() {
+    	Main.closeFacture();
+    }
 
 }

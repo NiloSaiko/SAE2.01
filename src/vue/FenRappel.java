@@ -7,9 +7,9 @@ import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
-public class FenetreRappel extends Stage {
+public class FenRappel extends Stage {
 	
-	public FenetreRappel() throws IOException {
+	public FenRappel() throws IOException {
 		Scene laScene;
 		laScene = new Scene(creerSceneGraph());
 		this.setTitle("Rappel");
