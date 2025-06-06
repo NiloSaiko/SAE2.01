@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="593.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label style="-fx-font-weight: bold;" text="Objet : Facture pour votre cotisation à EllaDanse ">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding></Label>
+      <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="600.0">
+         <children>
+            <Label text="Bonjour " />
+            <TextField prefHeight="29.0" prefWidth="194.0" text="[Prénom/Nom de l'adhérent]" />
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <VBox prefHeight="411.0" prefWidth="600.0">
+         <children>
+            <HBox prefHeight="123.0" prefWidth="600.0">
+               <children>
+                  <TextArea prefHeight="200.0" prefWidth="410.0" text="Facture&#10;n° [num]&#10;le [date]&#10;" />
+                  <VBox alignment="TOP_RIGHT" prefHeight="200.0" prefWidth="230.0">
+                     <children>
+                        <Label text="EllaDanse" />
+                        <Label layoutX="10.0" layoutY="10.0" text="Rue John" />
+                        <Label layoutX="10.0" layoutY="29.0" text="Travolta 22300 " />
+                        <Label layoutX="10.0" layoutY="29.0" text="Lannion " />
+                        <Label layoutX="10.0" layoutY="29.0" text="elladanse@gmail.com " />
+                        <Label layoutX="10.0" layoutY="86.0" text="tél : 07 85 03 96 04" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </HBox>
+            <TextArea prefHeight="46.0" prefWidth="600.0" text="Facture à [Prénom/Nom de l'adhérent], [Adresse]&#10;" />
+            <TableView prefHeight="140.0" prefWidth="560.0">
+              <columns>
+                <TableColumn prefWidth="186.0" text="Description" />
+                <TableColumn prefWidth="186.0" text="Nomme d'heures" />
+                  <TableColumn prefWidth="186.0" text="Prix" />
+              </columns>
+            </TableView>
+            <VBox alignment="CENTER_RIGHT" prefHeight="135.0" prefWidth="560.0">
+               <children>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <Label text="Total :" />
+                        <TextField />
+                        <Label text="euros" />
+                     </children>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <Label text="Montant payé :" />
+                        <TextField />
+                        <Label text="euros" />
+                     </children>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <Label text="Mode de paiement :" />
+                        <TextField />
+                     </children>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" prefHeight="49.0" prefWidth="600.0" spacing="10.0">
+         <children>
+            <Button fx:id="bnAnnulerVisuMail" mnemonicParsing="false" prefHeight="29.0" prefWidth="100.0" text="Annuler">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="bnEnvoyerMail" mnemonicParsing="false" prefWidth="100.0" text="Envoyer">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
