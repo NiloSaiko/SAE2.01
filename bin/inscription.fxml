@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane prefHeight="400" prefWidth="600" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vue.CtrlInscription">
+    <children>
+        <Label layoutX="20" layoutY="20" style="-fx-font-size: 18px;" text="Inscriptions" />
+
+        <ComboBox fx:id="coursComboBox" layoutX="100" layoutY="60" prefWidth="200" />
+        <Label layoutX="20" layoutY="65" text="Cours" />
+
+        <TableView fx:id="inscritsTable" layoutX="20" layoutY="100" prefHeight="200" prefWidth="560">
+            <columns>
+                <TableColumn fx:id="nomColumn" prefWidth="190.0" text="Nom" />
+                <TableColumn fx:id="prenomColumn" prefWidth="180" text="Prénom" />
+                <TableColumn fx:id="montantColumn" prefWidth="190.0" text="Montant payé" />
+            </columns>
+        </TableView>
+
+        <Button fx:id="modifierButton" layoutX="480" layoutY="310" onAction="#clicModif" text="Modifier" />
+        <Button fx:id="fermerButton" layoutX="20" layoutY="310" onAction="#clicFermer" text="Fermer" />
+    </children>
+</AnchorPane>
