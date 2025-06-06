@@ -29,4 +29,8 @@ public class CtrlPasPaye {
     @FXML void clicQuitter() {
     	Main.closePasPaye();
     }
+    
+    @FXML void clicEnvoyerRappel() {
+    	Main.openEnvoyerRappelPasPaye();
+    }
 }

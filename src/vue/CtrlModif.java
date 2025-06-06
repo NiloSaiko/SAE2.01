@@ -1,5 +1,6 @@
 package vue;
 
+import Controleur.Main;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
@@ -14,4 +15,13 @@ public class CtrlModif {
     @FXML private TextField nomField;
     @FXML private Button bnEnregistrer;
     @FXML private Button bnSuppMembre;
+    
+    @FXML void clicAnnuler() {
+    	Main.closeModif();
+    }
+    
+    @FXML void clicEnregistrer() {
+    	Main.closeModif();
+    }
+    
 }

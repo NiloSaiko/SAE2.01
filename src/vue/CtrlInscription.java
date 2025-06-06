@@ -20,5 +20,11 @@ public class CtrlInscription {
     @FXML void clicFermer() {
     	Main.closeInscription();
     }
+    
+    @FXML void clicModif() {
+    	Main.openModif();
+    }
+    
+    
 
 }

@@ -20,5 +20,9 @@ public class CtrlRappel {
     @FXML void clicAnnuler() {
     	Main.closeRappel();
     }
+    @FXML void clicVisuMail() {
+    	Main.openVisuMail();
+    }
+    
 
 }

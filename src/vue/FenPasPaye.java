@@ -12,7 +12,7 @@ public class FenPasPaye  extends Stage  {
 	public FenPasPaye() throws IOException {
 		Scene laScene;
 		laScene = new Scene(creerSceneGraph());
-		this.setTitle("Facture");
+		this.setTitle("Non payé");
 		this.setScene(laScene);
 		this.sizeToScene();
 		this.setResizable(false);

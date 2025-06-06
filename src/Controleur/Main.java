@@ -3,11 +3,14 @@ import java.io.IOException;
 import javafx.application.Application;
 import javafx.stage.Stage;
 import vue.FenFacture;
+import vue.FenFactureGenerer;
 import vue.FenGestion;
 import vue.FenInscription;
+import vue.FenMailEnvoye;
 import vue.FenModif;
 import vue.FenPasPaye;
 import vue.FenRappel;
+import vue.FenVisuMail;
 
 public class Main extends Application{
 	static public FenGestion fenGestion;
@@ -16,6 +19,11 @@ public class Main extends Application{
 	static public FenInscription fenInscription;
 	static public FenModif fenModif;
 	static public FenPasPaye fenPasPaye;
+	static public FenMailEnvoye fenMailEnvoye;
+	static public FenFactureGenerer fenFactureGenerer;
+	static public FenVisuMail fenVisuMail;
+	static public FenMailEnvoye fenEnvoyerMail;
+	
 	
 	
 	public void start(Stage f) throws IOException {
@@ -25,6 +33,10 @@ public class Main extends Application{
 		fenInscription = new FenInscription();
 		fenModif = new FenModif();
 		fenPasPaye = new FenPasPaye();
+		fenMailEnvoye = new FenMailEnvoye();
+		fenFactureGenerer= new FenFactureGenerer();
+		fenVisuMail= new FenVisuMail();
+		fenEnvoyerMail = new FenMailEnvoye();
 		fenGestion.show();
 	}
 	
@@ -54,6 +66,11 @@ public class Main extends Application{
 		fenPasPaye.show();
 	}
 	
+	static public void openModif(){
+		fenInscription.close();
+		fenModif.show();
+	}
+	
 	static public void closeInscription(){
 		fenGestion.show();
 		fenInscription.close();
@@ -73,7 +90,50 @@ public class Main extends Application{
 		fenGestion.show();
 		fenPasPaye.close();
 	}
-
+	
+	static public void closeModif(){
+		fenInscription.show();
+		fenModif.close();
+	}
+	
+	static public void envoieAutreMail(){
+		fenMailEnvoye.close();
+		fenRappel.show();
+	}
+	
+	static public void retourMenu(){
+		fenMailEnvoye.close();
+		fenGestion.show();
+	}
+	
+	static public void openEnvoyerRappelPasPaye(){
+		fenPasPaye.close();
+		fenRappel.show();
+	}
+	
+	static public void creerAutreFacture(){
+		fenFactureGenerer.close();
+		fenFacture.show();
+	}
+	
+	static public void retourMenuFact(){
+		fenFactureGenerer.close();
+		fenGestion.show();
+	}
+	
+	static public void closeVisuMail(){
+		fenVisuMail.close();
+		fenRappel.show();
+	}
+	
+	static public void envoieMail(){
+		fenVisuMail.close();
+		fenEnvoyerMail.show();
+	}
+	static public void openVisuMail(){
+		fenRappel.close();
+		fenVisuMail.show();
+	}
 	
 	
 	
