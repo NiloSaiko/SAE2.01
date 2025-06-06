@@ -48,7 +48,7 @@
               <HBox alignment="CENTER_RIGHT" spacing="10">
          <children>
                      <Button fx:id="bnAnnuler" onAction="#clicAnnuler" text="Annuler" />
-                     <Button fx:id="bnGenerer" text="Générer" />
+                     <Button fx:id="bnGenerer" onAction="#clicGenerer" text="Générer" />
          </children>
               </HBox>
           </children>

@@ -10,6 +10,7 @@ import vue.FenMailEnvoye;
 import vue.FenModif;
 import vue.FenPasPaye;
 import vue.FenRappel;
+import vue.FenVisuFacture;
 import vue.FenVisuMail;
 
 public class Main extends Application{
@@ -23,7 +24,7 @@ public class Main extends Application{
 	static public FenFactureGenerer fenFactureGenerer;
 	static public FenVisuMail fenVisuMail;
 	static public FenMailEnvoye fenEnvoyerMail;
-	
+	static public FenVisuFacture fenVisuFacture;
 	
 	
 	public void start(Stage f) throws IOException {
@@ -37,6 +38,7 @@ public class Main extends Application{
 		fenFactureGenerer= new FenFactureGenerer();
 		fenVisuMail= new FenVisuMail();
 		fenEnvoyerMail = new FenMailEnvoye();
+		fenVisuFacture = new FenVisuFacture();
 		fenGestion.show();
 	}
 	
@@ -135,7 +137,20 @@ public class Main extends Application{
 		fenVisuMail.show();
 	}
 	
+	static public void fermerVisuFact(){
+		fenVisuFacture.close();
+		fenFacture.show();
+	}
 	
+	static public void openFactGenerer(){
+		fenVisuFacture.close();
+		fenFactureGenerer.show();
+	}
+	
+	static public void openVisuFacture(){
+		fenFacture.close();
+		fenVisuFacture.show();
+	}
 	
 	
 	

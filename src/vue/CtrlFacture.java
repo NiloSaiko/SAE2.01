@@ -22,5 +22,11 @@ public class CtrlFacture {
     @FXML void clicAnnuler() {
     	Main.closeFacture();
     }
+    
+    @FXML void clicGenerer() {
+    	Main.openVisuFacture();
+    }
+    
+    
 
 }
