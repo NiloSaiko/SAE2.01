@@ -8,10 +8,13 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
 
 public class CtrlFactureGenerer {
-	@FXML private Button bnGenererAUtreFacture;
-    @FXML private Button bnRetourMenu;
+	@FXML
+    private Button bnGenererAutreFacture;
 
-    @FXML void clicEnvoyerAutreRappel() {
+    @FXML
+    private Button bnRetourMenu;
+
+    @FXML void clicCreerAutreFacture() {
     	Main.creerAutreFacture();
     }
 
