@@ -38,7 +38,7 @@
               </HBox>
                <Label text="Facturé à :" />
       
-              <HBox spacing="10">
+              <HBox alignment="CENTER_LEFT" spacing="10">
          <children>
                      <Label text="Id :" />
                      <TextField fx:id="idField" prefWidth="200" />

@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.geometry.Insets?>
 
-<AnchorPane prefHeight="300" prefWidth="400" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vue.CtrlGestion">
+<AnchorPane prefHeight="288.0" prefWidth="384.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vue.CtrlGestion">
    <children>
-       <VBox alignment="CENTER_LEFT" spacing="10" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+      <ImageView fitHeight="134.0" fitWidth="143.0" layoutX="241.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo.jpg" />
+         </image>
+      </ImageView>
+       <VBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="14.0" prefHeight="239.0" prefWidth="257.0" spacing="10" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="139.0" AnchorPane.topAnchor="14.0">
           <children>
-              <Label style="-fx-font-weight: bold;" text="Gestion des membres" />
+              <Label style="-fx-font-weight: bold; -fx-font-size: 18px;" text="Gestion des membres" />
               <Label text="Asso Ela Danse" />
               <Label text="Bienvenue ! Que voulez-vous faire ?" />
       
@@ -19,6 +25,6 @@
               <Button fx:id="bnGererFact" onAction="#clicFacture" text="Générer facture" />
           </children>
        </VBox>
-        <Button fx:id="bnQuitter" layoutX="328.0" layoutY="264.0" onAction="#clicFermer" text="Quitter" />
+        <Button fx:id="bnQuitter" layoutX="290.0" layoutY="247.0" onAction="#clicFermer" text="Quitter" />
    </children>
 </AnchorPane>
