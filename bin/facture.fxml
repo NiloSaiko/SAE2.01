@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane prefHeight="209.0" prefWidth="400" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vue.CtrlFacture">
+   <children>
+       <VBox prefHeight="210.0" prefWidth="380.0" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+          <children>
+              
+              <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Générer facture" />
+      
+              <HBox spacing="10">
+         <children>
+                     <Label text="Type de facture :" />
+                     <RadioButton fx:id="bnCoti" text="cotisation">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="typeFactureGroup" />
+                     </toggleGroup>
+                  </RadioButton>
+                     <RadioButton fx:id="bnCours" text="cours" toggleGroup="$typeFactureGroup" />
+         </children>
+              </HBox>
+      
+              <HBox spacing="10">
+         <children>
+                     <Label text="Moyen de paiement :" />
+                     <RadioButton fx:id="bnEspeces" text="Espèces">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="moyenPaiementGroup" />
+                     </toggleGroup>
+                  </RadioButton>
+                     <RadioButton fx:id="bnCheque" text="Chèque" toggleGroup="$moyenPaiementGroup" />
+                     <RadioButton fx:id="bnCarte" text="Carte" toggleGroup="$moyenPaiementGroup" />
+         </children>
+              </HBox>
+               <Label text="Facturé à :" />
+      
+              <HBox spacing="10">
+         <children>
+                     <Label text="Id :" />
+                     <TextField fx:id="idField" prefWidth="200" />
+         </children>
+              </HBox>
+      
+              <HBox alignment="CENTER_RIGHT" spacing="10">
+         <children>
+                     <Button fx:id="bnAnnuler" onAction="#clicAnnuler" text="Annuler" />
+                     <Button fx:id="bnGenerer" onAction="#clicGenerer" text="Générer" />
+         </children>
+              </HBox>
+          </children>
+       </VBox>
+   </children>
+</AnchorPane>

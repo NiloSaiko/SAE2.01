@@ -12,7 +12,7 @@ public class FenInscription extends Stage  {
 	public FenInscription() throws IOException {
 		Scene laScene;
 		laScene = new Scene(creerSceneGraph());
-		this.setTitle("Facture");
+		this.setTitle("Inscription");
 		this.setScene(laScene);
 		this.sizeToScene();
 		this.setResizable(false);

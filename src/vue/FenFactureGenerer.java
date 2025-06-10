@@ -7,19 +7,18 @@ import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
-public class FenetreRappel extends Stage {
-	
-	public FenetreRappel() throws IOException {
+public class FenFactureGenerer extends Stage  {
+	public FenFactureGenerer() throws IOException {
 		Scene laScene;
 		laScene = new Scene(creerSceneGraph());
-		this.setTitle("Rappel");
+		this.setTitle("Facture générée");
 		this.setScene(laScene);
 		this.sizeToScene();
 		this.setResizable(false);
 	}
 	
 	private Pane creerSceneGraph() throws IOException {
-		File fichier = new File("/home/etuinfo/esmmartin/Documents/S2/SAE2.01/SAE2.01/bin/rappel.fxml");
+		File fichier = new File("/home/etuinfo/esmmartin/Documents/S2/SAE2.01/SAE2.01/bin/factureGenerer.fxml");
 		FXMLLoader loader;
 		loader = new FXMLLoader(fichier.toURI().toURL());
 		Pane racine = loader.load();

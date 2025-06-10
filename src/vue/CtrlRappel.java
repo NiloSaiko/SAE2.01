@@ -1,5 +1,6 @@
 package vue;
 
+import Controleur.Main;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.RadioButton;
@@ -15,5 +16,13 @@ public class CtrlRappel {
     @FXML private TextField nomField;
     @FXML private Button bnVisualiser;
     @FXML private RadioButton rbNov2;
+    
+    @FXML void clicAnnuler() {
+    	Main.closeRappel();
+    }
+    @FXML void clicVisuMail() {
+    	Main.openVisuMail();
+    }
+    
 
 }

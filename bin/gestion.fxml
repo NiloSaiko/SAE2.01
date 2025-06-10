@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane prefHeight="300" prefWidth="400" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vue.CtrlGestion">
+   <children>
+       <VBox alignment="CENTER_LEFT" spacing="10" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+          <children>
+              <Label style="-fx-font-weight: bold;" text="Gestion des membres" />
+              <Label text="Asso Ela Danse" />
+              <Label text="Bienvenue ! Que voulez-vous faire ?" />
+      
+              <Button fx:id="bnCotiAnnuelle" onAction="#clicInscription" text="Cotisations annuelles" />
+              <Button fx:id="bnEnvoiRappel" onAction="#clicRappel" text="Envoyer un rappel" />
+              <Button fx:id="bnAffichListe" onAction="#clicPasPaye" text="Afficher liste (cotisation non payée)" />
+              <Button fx:id="bnGererFact" onAction="#clicFacture" text="Générer facture" />
+          </children>
+       </VBox>
+        <Button fx:id="bnQuitter" layoutX="328.0" layoutY="264.0" onAction="#clicFermer" text="Quitter" />
+   </children>
+</AnchorPane>

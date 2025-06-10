@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label style="-fx-font-weight: bold;" text="Objet : Rappel - Paiement de votre cotisation à EllaDanse ">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding></Label>
+      <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="600.0">
+         <children>
+            <Label text="Bonjour " />
+            <TextField prefHeight="29.0" prefWidth="194.0" text="[Prénom/Nom de l'adhérent]" />
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <TextArea prefHeight="212.0" prefWidth="580.0" text="Nous espérons que vous allez bien et que vous profitez pleinement des activités et cours &#10;proposés par EllaDanse. Nous nous permettons de vous adresser ce message pour vous &#10;rappeler que nous n'avons pas encore reçu le règlement de votre cotisation pour la saison &#10;[année/année]&#10;Cordialement,&#10;Elladanse">
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </TextArea>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Button fx:id="bnAnnulerVisuMail" mnemonicParsing="false" prefHeight="29.0" prefWidth="100.0" text="Annuler">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="bnEnvoyerMail" mnemonicParsing="false" prefWidth="100.0" text="Envoyer">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>
