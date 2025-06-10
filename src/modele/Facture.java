@@ -1,4 +1,4 @@
-package part3;
+package modele;
 import java.util.Calendar;
 import java.util.Date;
 

@@ -1,7 +1,12 @@
-package part3;
+package modele;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+
+import modele.Eleve;
 
 public class Cour {
     private static int nbreDeCours = 0; // Compteur de cours
@@ -10,7 +15,9 @@ public class Cour {
     protected String nom; // Nom du cours
     protected Date journee; // Date du jour du cours
     protected int cout; // Coût du cours en euros
-
+    
+    
+    static private ObservableList<Eleve> lesParticipant = FXCollections.observableArrayList();
     
 
     public Cour(String nom, Date journee, int cout) {
@@ -43,6 +50,18 @@ public class Cour {
     }
     public void setCout(int cout) {
         this.cout = cout;
+    }
+    
+    static public void chargementELeve() {
+    	lesParticipant.add(new Eleve ("Jack", "zedfr", "azertghvfrtg", "", "22222", "paris"));
+    	lesParticipant.add(new Eleve ("Jack", "zedfr", "azertghvfrtg", "", "22222", "paris"));
+    	lesParticipant.add(new Eleve ("efefe", "zedfr", "azertghvfrtg", "", "22222", "paris"));
+    	lesParticipant.add(new Eleve ("fefef", "zedfr", "azertghvfrtg", "", "22222", "paris"));
+    	lesParticipant.add(new Eleve ("Jarhgrhgfghtck", "zedfr", "azertghvfrtg", "", "22222", "paris"));
+    }
+    
+    static public ObservableList<Eleve> getLesEleves(){
+    	return lesParticipant;
     }
     
 }

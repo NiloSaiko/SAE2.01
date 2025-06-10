@@ -1,6 +1,7 @@
 package Controleur;
 import java.io.IOException;
 import javafx.application.Application;
+import javafx.collections.ObservableList;
 import javafx.stage.Stage;
 import vue.FenFacture;
 import vue.FenFactureGenerer;
@@ -12,6 +13,10 @@ import vue.FenPasPaye;
 import vue.FenRappel;
 import vue.FenVisuFacture;
 import vue.FenVisuMail;
+
+import modele.Cour;
+import modele.Eleve;
+
 
 public class Main extends Application{
 	static public FenGestion fenGestion;
@@ -28,6 +33,9 @@ public class Main extends Application{
 	
 	
 	public void start(Stage f) throws IOException {
+		
+		Cour.chargementELeve();
+		
 		fenGestion = new FenGestion();
 		fenFacture = new FenFacture();
 		fenRappel = new FenRappel();
@@ -152,7 +160,9 @@ public class Main extends Application{
 		fenVisuFacture.show();
 	}
 	
-	
+	static public ObservableList<Eleve> getLesEleves(){
+		return Cour.getLesEleves();
+	}
 	
 	
 	

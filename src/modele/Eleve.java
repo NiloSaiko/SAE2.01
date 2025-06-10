@@ -1,4 +1,4 @@
-package part3;
+package modele;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Date;

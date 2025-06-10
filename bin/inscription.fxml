@@ -12,7 +12,7 @@
         <ComboBox fx:id="coursComboBox" layoutX="100" layoutY="60" prefWidth="200" />
         <Label layoutX="20" layoutY="65" text="Cours" />
 
-        <TableView fx:id="inscritsTable" layoutX="20" layoutY="100" prefHeight="200" prefWidth="560">
+        <TableView fx:id="tvListeEleve" layoutX="20" layoutY="100" prefHeight="200" prefWidth="560">
             <columns>
                 <TableColumn fx:id="nomColumn" prefWidth="190.0" text="Nom" />
                 <TableColumn fx:id="prenomColumn" prefWidth="180" text="Prénom" />

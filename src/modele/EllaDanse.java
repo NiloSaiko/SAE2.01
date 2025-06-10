@@ -1,4 +1,4 @@
-package part3;
+package modele;
 public class EllaDanse {
     private String nom;
     private String adresse;
