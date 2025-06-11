@@ -9,7 +9,7 @@
    <bottom>
       <HBox alignment="CENTER" prefHeight="62.0" prefWidth="315.0" spacing="20.0" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" text="Générer autre facture">
+            <Button mnemonicParsing="false" text="Générer autre mail">
                <HBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </HBox.margin>
@@ -23,6 +23,6 @@
       </HBox>
    </bottom>
    <center>
-      <Label alignment="TOP_LEFT" style="-fx-font-weight: bold; -fx-font-size: 18;" text="La facture à été envoyer " BorderPane.alignment="CENTER" />
+      <Label alignment="TOP_LEFT" style="-fx-font-weight: bold; -fx-font-size: 18;" text="Le mail à été générer " BorderPane.alignment="CENTER" />
    </center>
 </BorderPane>
