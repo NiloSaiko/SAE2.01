@@ -45,7 +45,7 @@
    <bottom>
       <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="bnEnvoyerRappel" mnemonicParsing="false" text="Envoyer Rappel" />
+            <Button fx:id="bnEnvoyerRappel" mnemonicParsing="false" onAction="#clicEnvoyerRappel" text="Envoyer Rappel" />
             <Button fx:id="bnQuitter" mnemonicParsing="false" onAction="#clicQuitter" text="Quitter" />
          </children>
          <padding>
