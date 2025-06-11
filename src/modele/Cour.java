@@ -26,7 +26,28 @@ public class Cour {
     }
     // Main
     public static void main(String[] args) {
-        
+        Eleve e1 = new Eleve("John", "Doe", "adresse1", "adresse2", "12345", "Paris");
+        Eleve e2 = new Eleve("Jane", "Smith", "adresse3", "adresse4", "67890", "Lyon");
+        Eleve e3 = new Eleve("Alice", "Johnson", "adresse5", "adresse6", "54321", "Marseille");
+        Eleve e4 = new Eleve("Bob", "Brown", "adresse7", "adresse8", "98765", "Toulouse");
+        Eleve e5 = new Eleve("Charlie", "Davis", "adresse9", "adresse10", "11223", "Nice");
+        Eleve e6 = new Eleve("Eve", "Wilson", "adresse11", "adresse12", "44556", "Bordeaux");
+        Eleve e7 = new Eleve("Frank", "Garcia", "adresse13", "adresse14", "77889", "Lille");
+        Eleve e8 = new Eleve("Grace", "Martinez", "adresse15", "adresse16", "99000", "Strasbourg");
+        Eleve e9 = new Eleve("Hank", "Lopez", "adresse17", "adresse18", "22334", "Nantes");
+        Eleve e10 = new Eleve("Ivy", "Gonzalez", "adresse19", "adresse20", "55667", "Rennes");
+        Cour c1 = new Cour("Mathématiques", new Date(), 50);
+        c1.ajouterEleve(e1);
+        c1.ajouterEleve(e2);
+        c1.ajouterEleve(e3);
+        c1.ajouterEleve(e4);
+        c1.ajouterEleve(e5);
+        c1.ajouterEleve(e6);
+        c1.ajouterEleve(e7);
+        c1.ajouterEleve(e8);
+        c1.ajouterEleve(e9);
+        c1.ajouterEleve(e10);
+        c1.afficher();
     }
 
     // Getters and setters
@@ -52,15 +73,7 @@ public class Cour {
         this.cout = cout;
     }
     
-    static public void chargementELeve() {
-    	lesParticipant.add(new Eleve ("Jack", "zedfr", "azertghvfrtg", "", "22222", "paris"));
-    	lesParticipant.add(new Eleve ("Jack", "zedfr", "azertghvfrtg", "", "22222", "paris"));
-    	lesParticipant.add(new Eleve ("efefe", "zedfr", "azertghvfrtg", "", "22222", "paris"));
-    	lesParticipant.add(new Eleve ("fefef", "zedfr", "azertghvfrtg", "", "22222", "paris"));
-    	lesParticipant.add(new Eleve ("Jarhgrhgfghtck", "zedfr", "azertghvfrtg", "", "22222", "paris"));
-    }
-    
-    static public ArrayList<Eleve> getLesEleves(){
+    public ArrayList<Eleve> getLesEleves(){
     	return lesParticipant;
     }
 
@@ -77,6 +90,16 @@ public class Cour {
         }
 	}
 	
-	
+	//Affichage
+    public void afficher() {
+        System.out.println("ID: " + id);
+        System.out.println("Nom: " + nom);
+        System.out.println("Journee: " + journee);
+        System.out.println("Cout: " + cout);
+        System.out.println("Participants: ");
+        for (Eleve e : lesParticipant) {
+            System.out.println("- " + e.getNom() + " " + e.getPrenom());
+        }
+    }
     
 }
