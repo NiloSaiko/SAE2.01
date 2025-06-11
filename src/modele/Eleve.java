@@ -10,6 +10,9 @@ public class Eleve {
     protected String adresse2;
     protected String codePostal;
     protected String ville;
+
+    protected double montantPaye;
+    
     protected List<Cour> cours = new ArrayList<Cour>();
 
 
